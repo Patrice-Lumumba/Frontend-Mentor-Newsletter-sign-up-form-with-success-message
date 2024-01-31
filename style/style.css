@@ -113,7 +113,7 @@ button {
     }
 
     .container{
-      border-radius: 1%;
+      border-radius: 5%;
       width: 70%;
       overflow: hidden;
       height: max-content;
@@ -121,50 +121,51 @@ button {
     }
     
   }
-  @media (max-width: 375px) {
-    body {
-      padding: 0;
-      font-weight: 400;
-      /* background-image: url('assets/images/illustration-sign-up-mobile.svg'); */
-    }
-    .container {
-      grid-template-columns: auto;
-      width: min-content;
-      /* height: max-content; */
-      border-radius: 0;
-      margin: 70px 0 0 0;
-      padding: 0;
-    }
-    .right {
-      display: none !important;
-      background-image: url('../assets/images/illustration-sign-up-mobile.svg');
-    }
 
-    .right img {
-      overflow: hidden;
-    }
+  /* Mobile */
 
-    .form{
-      width: 100%;
-      /* border-radius: 10px 10px 10px 10; */
-    }
-    .left {
-      height: 100%;
-      width: 100%;
-    }
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+    font-weight: 400;
+    /* background-image: url('assets/images/illustration-sign-up-mobile.svg'); */
+  }
+  .container {
+    grid-template-columns: none;
+    width: min-content;
+    height: max-content;
+    border-radius: 0;
+    margin: 70px 0 0 0;
+    padding: 0;
+  }
 
-    .left .form{
-      height: auto !important;
-    }
-
-    .header{
-      margin-bottom: 20px;
-    }
-
-    input[type=radio] {
-      width: 20px;
-      height: 20px;
-      accent-color: hsl(4, 100%, 67%);
-    }  
-    
-}
+  button{
+    display: block;
+  }
+  .right {
+    display: none !important;
+    background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+  }
+  .right img {
+    overflow: hidden;
+  }
+  .form{
+    width: 100%;
+    /* border-radius: 10px 10px 10px 10; */
+  }
+  .left {
+    height: 100%;
+    width: 100%;
+  }
+  .left .form{
+    height: auto !important;
+  }
+  .header{
+    margin-bottom: 20px;
+  }
+  input[type=radio] {
+    width: 20px;
+    height: 20px;
+    /* accent-color: hsl(6, 100%, 67%); */
+  } 
+}    
